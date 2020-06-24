@@ -1,0 +1,17 @@
+.Side-bar
+  .Side-bar__user-name
+    .Top-items
+      %p.Top-items__user-name masa
+      .Top-items__icons
+        = link_to "#", class: "Top-items__icons--edit" do
+          = icon('far', 'edit', class: 'Top-items__icons-edit')
+          %span<>
+        = link_to "#", class: "Top-items__icons--config" do
+          = icon('fas', 'cog', class: 'Top-items__icons-config')
+  .Side-bar__group-list
+    .Group
+      %p.Group__name techcamp
+      %p.Group__message まだメッセージがありません
+    .Group
+      %p.Group__name techcamp
+      %p.Group__message まだメッセージがありません
