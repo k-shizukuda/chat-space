@@ -62,5 +62,4 @@ $(function(){
       $('.Form__submit').prop('disabled', false)
     })
   });
-
 });
