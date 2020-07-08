@@ -37,8 +37,11 @@ $(function(){
       return html;
     };
   }
-  function reloadMessages(){
+  let reloadMessages = function(){
     let last_message_id = $('.MessageBox:last').data("message-id");
+    if(last_message_id == undefined){
+      last_message_id = 0;
+    }
     $.ajax({
       type: 'get',
       url: 'api/messages',

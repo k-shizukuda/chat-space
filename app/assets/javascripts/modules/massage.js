@@ -53,13 +53,13 @@ $(function(){
     .done(function(data){
       let html = buildHTML(data);
       $(".MessageField").append(html);
-      $('.MessageField').animate({ scrollTop: $('.MessageField')[0].scrollHeight })
+      $('.MessageField').animate({ scrollTop: $('.MessageField')[0].scrollHeight });
       $('form')[0].reset();
-      $('.Form__submit').prop('disabled', false)
+      $('.Form__submit').prop('disabled', false);
     })
     .fail(function() {
       alert("メッセージの送信に失敗しました");
-      $('.Form__submit').prop('disabled', false)
+      $('.Form__submit').prop('disabled', false);
     })
   });
 });
