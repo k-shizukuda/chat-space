@@ -1,5 +1,4 @@
 $(function(){
-
   function buildHTML(message){
     if (message.image){
       let html = `<div class="MessageBox" data-message-id=${message.id}>
